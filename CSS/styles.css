@@ -12,7 +12,7 @@ h1, h2
     color: #1163baf2;
     margin-bottom: 0;
     text-align: center;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.763);
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.763);
 }
 
 p{
@@ -20,6 +20,22 @@ p{
     text-align: center;
     color: #131313;
 }
+body
+{
+    width: 1080px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
+    padding: 20px 10px;
+}
+#main_wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 1290px;
+}
+
+/* ---- Lists ------ */
 li{
     font-family: 'Montserrat', sans-serif;
     text-align: left;
@@ -31,50 +47,53 @@ ul
     margin-left: 0px;
     padding-inline-start: 40px;
 }
-
-
-#main_wrapper{
-    display: flex;
-    flex-direction: row;
-    width: 1080px;
-    height: 1450px;
-    margin: auto;
-    box-shadow: 2px 2px 5px black;
-    padding: 20px 10px;
-
+/* ---- Links ------ */
+a
+{
+    text-decoration: none;
+    color: darkblue;
+}
+a:visited
+{
+    color: rgba(0, 0, 139, 0.474);
 }
 
-
+a:hover
+{
+    color: red;
+}
 /* ---------------------------- Left Section ------------------------------- */
 #left{
     display: flex;
     flex-direction: column;
     flex: 1;
-    
+    position: relative;
     margin: 0 0px;
 }
 #gris{
     background-color: #e0e0e0fa;
     box-shadow: 2px 2px 5px black;
-    padding: 270px 15px;
+    padding: 0px 15px;
     margin: 0 20px;
+    margin-top: 0px;
+    position: absolute;
     
 }
+/* ---- Blue pannel ------ */
 #me
 {
     background-color: #1163baf9;
     text-align: center;
-    
     padding: 0px 20px;
-    padding-top: 30px;
+    padding-top: 0px;
+    margin-top: 20px;
     box-shadow: 2px 2px 5px black;
     z-index: 1;
     width: 500px;
     position: absolute;
-    top: 40px;
-    left: 90px
-    
-    
+    top: 0px;
+    left: -5px;
+    max-height: 190px;
 }
 #me h1{
     color: white;
@@ -86,8 +105,15 @@ ul
     text-transform: uppercase;
     color: white;
     font-size: 40px;
-    margin-bottom: Opx
+    margin-bottom: Opx;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.763);
 }
+/* ---- Infos ------ */
+#infos
+{
+    margin-top: 230px;
+}
+/* ---- Contact ------ */
 #contact ul
 {
     list-style-type: none;
@@ -97,11 +123,14 @@ ul
     text-align: center;
     margin-right: 50px;
 }
-
+/* ---- competances ------ */
 #competences ul{
     list-style-type: disc;
 }
-
+#competences p{
+    text-align: left;
+    font-weight: 600;
+}
 /* ---------------------------- Right Section ------------------------------- */
 #right{
     display: flex;
@@ -113,37 +142,21 @@ ul
 {
     margin-bottom: 10px;
 }
+/* ---- Image------ */
+#right img{
+    width: 200px;
+    margin: auto;
+    border: 1px groove rgba(255, 255, 255, 0.263);
+    border-radius: 200px ;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.53);
+}
+/* ---- Text ------ */
 #texte_presentation p
 {
     text-align: center;
 }
-
-
-
-#right img{
-    width: 200px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.941);
-    border-radius: 350px ;
-    text-align: center;
-    box-shadow: 2px 2px 5px black;
-}
-
-#right h3{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin-bottom: 0px;
-}
-
-h3+p{
-    text-align: left;
-    margin: 0 0 0px 40px;
-    font-size: 13px;
-    color: #131313;
-}
-
+/* ---- Experience boxes ------ */
 #experience div
 {
     background-color: #e0e0e056;
@@ -151,9 +164,25 @@ h3+p{
     padding: 1px 1px 10px 15px;
     margin-bottom: 10px;
     border: 1 solid #131313;
-    box-shadow: 2px 2px 5px black;
-    
+    box-shadow: 2px 2px 5px black; 
 }
+/* ---- Titles H3 ------ */
+#right h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 8px;
+}
+/* ---- Experiences Text ------ */
+h3+p{
+    text-align: left;
+    margin: 0 0 0px 40px;
+    font-size: 13px;
+    color: #131313;
+}
+/* ---- Formation box ------ */
 #formations ul
 {
     background-color: #e0e0e056;
@@ -162,4 +191,14 @@ h3+p{
     margin-bottom: 10px;
     border: 1 solid #131313;
     box-shadow: 2px 2px 5px black;
+}
+/* ----------------------------- Footer -------------------------------- */
+hr
+{
+    border-top: 1px solid #1163baf9;
+}
+footer p 
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

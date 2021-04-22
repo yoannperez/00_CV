@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 /* ----------------------------- Global -------------------------------- */
 
 
@@ -11,6 +11,8 @@ h1, h2
     font-family: 'Bangers', cursive;
     color: #1163baf2;
     margin-bottom: 0;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.763);
 }
 
 p{
@@ -27,7 +29,7 @@ li{
 ul
 {
     margin-left: 0px;
-    padding-inline-start: 20px;
+    padding-inline-start: 40px;
 }
 
 
@@ -70,7 +72,7 @@ ul
     width: 500px;
     position: absolute;
     top: 40px;
-    left: 610px
+    left: 90px
     
     
 }
@@ -86,8 +88,18 @@ ul
     font-size: 40px;
     margin-bottom: Opx
 }
-ul{
+#contact ul
+{
     list-style-type: none;
+}
+#contact li 
+{
+    text-align: center;
+    margin-right: 50px;
+}
+
+#competences ul{
+    list-style-type: disc;
 }
 
 /* ---------------------------- Right Section ------------------------------- */
@@ -97,6 +109,15 @@ ul{
     flex: 1;
     margin: 0 10px;
 }
+#right h2
+{
+    margin-bottom: 10px;
+}
+#texte_presentation p
+{
+    text-align: center;
+}
+
 
 
 #right img{
@@ -104,7 +125,41 @@ ul{
     margin: auto;
     margin-top: 30px;
     margin-bottom: 20px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.941);
     border-radius: 350px ;
     text-align: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+#right h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+h3+p{
+    text-align: left;
+    margin: 0 0 0px 40px;
+    font-size: 13px;
+    color: #131313;
+}
+
+#experience div
+{
+    background-color: #e0e0e056;
+    border-radius: 5px;
+    padding: 1px 1px 10px 15px;
+    margin-bottom: 10px;
+    border: 1 solid #131313;
+    box-shadow: 2px 2px 5px black;
+    
+}
+#formations ul
+{
+    background-color: #e0e0e056;
+    border-radius: 5px;
+    padding: 10px 1px 10px 30px;
+    margin-bottom: 10px;
+    border: 1 solid #131313;
+    box-shadow: 2px 2px 5px black;
 }

@@ -1,204 +1,186 @@
 /* ----------------------------- Fonts -------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 /* ----------------------------- Global -------------------------------- */
 
-
-h1, h2
-{
-    font-family: 'Bangers', cursive;
-    color: #1163baf2;
-    margin-bottom: 0;
-    text-align: center;
-    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.763);
+h1,
+h2 {
+  font-family: "Bangers", cursive;
+  color: #1163baf2;
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.763);
 }
 
-p{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: #131313;
+p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #131313;
 }
-body
-{
-    width: 1080px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: 2px 2px 5px black;
-    padding: 20px 10px;
+body {
+  width: 1080px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 5px black;
+  padding: 20px 10px;
 }
-#main_wrapper{
-    display: flex;
-    flex-direction: row;
-    height: 1290px;
+#main_wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 1290px;
 }
 
 /* ---- Lists ------ */
-li{
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 0.8em;
-    margin-left: 0;
+li {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-size: 0.8em;
+  margin-left: 0;
 }
-ul
-{
-    margin-left: 0px;
-    padding-inline-start: 40px;
+ul {
+  margin-left: 0px;
 }
 /* ---- Links ------ */
-a
-{
-    text-decoration: none;
-    color: darkblue;
+a {
+  text-decoration: none;
+  color: darkblue;
 }
-a:visited
-{
-    color: rgba(0, 0, 139, 0.474);
+a:visited {
+  color: rgba(0, 0, 139, 0.474);
 }
 
-a:hover
-{
-    color: red;
+a:hover {
+  color: red;
 }
 /* ---------------------------- Left Section ------------------------------- */
-#left{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    position: relative;
-    margin: 0 0px;
+#left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  margin: 0 0px;
 }
-#gris{
-    background-color: #e0e0e0fa;
-    box-shadow: 2px 2px 5px black;
-    padding: 0px 15px;
-    margin: 0 20px;
-    margin-top: 0px;
-    position: absolute;
-    
+#gris {
+  background-color: #e0e0e0fa;
+  box-shadow: 2px 2px 5px black;
+  padding: 0px 15px;
+  margin: 0 20px;
+  margin-top: 0px;
+  position: absolute;
 }
 /* ---- Blue pannel ------ */
-#me
-{
-    background-color: #1163baf9;
-    text-align: center;
-    padding: 0px 20px;
-    padding-top: 0px;
-    margin-top: 20px;
-    box-shadow: 2px 2px 5px black;
-    z-index: 1;
-    width: 500px;
-    position: absolute;
-    top: 0px;
-    left: -5px;
-    max-height: 190px;
+#me {
+  background-color: #1163baf9;
+  text-align: center;
+  padding: 0px 20px;
+  padding-top: 0px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 5px black;
+  z-index: 1;
+  width: 500px;
+  position: absolute;
+  top: 0px;
+  left: -5px;
+  max-height: 190px;
 }
-#me h1{
-    color: white;
-    font-size: 3em;
-    margin-top: 10px;
-    margin-bottom: -20px;
+#me h1 {
+  color: white;
+  font-size: 3em;
+  margin-top: 10px;
+  margin-bottom: -20px;
 }
-#me p{
-    text-transform: uppercase;
-    color: white;
-    font-size: 40px;
-    margin-bottom: Opx;
-    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.763);
+#me p {
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 0px;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.763);
 }
 /* ---- Infos ------ */
-#infos
-{
-    margin-top: 230px;
+#infos {
+  margin-top: 230px;
 }
 /* ---- Contact ------ */
-#contact ul
-{
-    list-style-type: none;
+#contact ul {
+  list-style-type: none;
 }
-#contact li 
-{
-    text-align: center;
-    margin-right: 50px;
+#contact li {
+  text-align: center;
+  margin-right: 50px;
 }
 /* ---- competances ------ */
-#competences ul{
-    list-style-type: disc;
+#competences ul {
+  list-style-type: disc;
 }
-#competences p{
-    text-align: left;
-    font-weight: 600;
+#competences p {
+  text-align: left;
+  font-weight: 600;
 }
 /* ---------------------------- Right Section ------------------------------- */
-#right{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin: 0 10px;
+#right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 10px;
 }
-#right h2
-{
-    margin-bottom: 10px;
+#right h2 {
+  margin-bottom: 10px;
 }
 /* ---- Image------ */
-#right img{
-    width: 200px;
-    margin: auto;
-    border: 1px groove rgba(255, 255, 255, 0.263);
-    border-radius: 200px ;
-    text-align: center;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.53);
+#right img {
+  width: 200px;
+  margin: auto;
+  border: 1px groove rgba(255, 255, 255, 0.263);
+  border-radius: 200px;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.53);
 }
 /* ---- Text ------ */
-#texte_presentation p
-{
-    text-align: center;
+#texte_presentation p {
+  text-align: center;
 }
 /* ---- Experience boxes ------ */
-#experience div
-{
-    background-color: #e0e0e056;
-    border-radius: 5px;
-    padding: 1px 1px 10px 15px;
-    margin-bottom: 10px;
-    border: 1 solid #131313;
-    box-shadow: 2px 2px 5px black; 
+#experience div {
+  background-color: #e0e0e056;
+  border-radius: 5px;
+  padding: 1px 1px 10px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #131313;
+  box-shadow: 2px 2px 5px black;
 }
 /* ---- Titles H3 ------ */
-#right h3{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin-bottom: 0px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding-bottom: 8px;
+#right h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 8px;
 }
 /* ---- Experiences Text ------ */
-h3+p{
-    text-align: left;
-    margin: 0 0 0px 40px;
-    font-size: 13px;
-    color: #131313;
+h3 + p {
+  text-align: left;
+  margin: 0 0 0px 40px;
+  font-size: 13px;
+  color: #131313;
 }
 /* ---- Formation box ------ */
-#formations ul
-{
-    background-color: #e0e0e056;
-    border-radius: 5px;
-    padding: 10px 1px 10px 30px;
-    margin-bottom: 10px;
-    border: 1 solid #131313;
-    box-shadow: 2px 2px 5px black;
+#formations ul {
+  background-color: #e0e0e056;
+  border-radius: 5px;
+  padding: 10px 1px 10px 30px;
+  margin-bottom: 10px;
+  border: 1px solid #131313;
+  box-shadow: 2px 2px 5px black;
 }
 /* ----------------------------- Footer -------------------------------- */
-hr
-{
-    border-top: 1px solid #1163baf9;
+hr {
+  border-top: 1px solid #1163baf9;
 }
-footer p 
-{
-    margin-top: 5px;
-    margin-bottom: 5px;
+footer p {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

@@ -69,7 +69,6 @@ a:hover {
   padding: 0px 15px;
   margin: 0 20px;
   margin-top: 0px;
-
   padding-bottom: 21px;
   border-radius: 5px;
 }
@@ -89,14 +88,14 @@ a:hover {
   max-height: 190px;
 }
 #me h1 {
-  color: white;
+  color: rgba(255, 255, 255, 0.987);
   font-size: 3em;
   margin-top: 10px;
   margin-bottom: -20px;
 }
 #me p {
   text-transform: uppercase;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 40px;
   margin-bottom: 0px;
   text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.763);
@@ -143,6 +142,9 @@ a:hover {
 /* ---- Text ------ */
 #texte_presentation p {
   text-align: center;
+  padding-top: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 /* ---- Experience boxes ------ */
 #experience div {
@@ -157,9 +159,8 @@ a:hover {
 #right h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin-bottom: 0px;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   padding-bottom: 8px;
 }
 /* ---- Experiences Text ------ */
@@ -185,4 +186,113 @@ hr {
 footer p {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+/* ----------------------------- Media Queries ------------------------- */
+
+@media all and (max-width: 480px) {
+  body {
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
+    padding: 0px 0px;
+    padding-bottom: 10px;
+  }
+  #main_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #right {
+    position: static;
+  }
+  #left {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+  #me h1 {
+    font-size: 2em;
+  }
+  #me {
+    position: absolute;
+    background-color: #1163baf9;
+    text-align: center;
+    padding: 5px;
+    margin: 30px 7px;
+    padding-bottom: 5px;
+    box-shadow: 2px 2px 5px black;
+    width: 98%;
+    box-sizing: border-box;
+  }
+  #right img {
+    margin-top: 0px;
+  }
+  #infos {
+    margin-top: 180px;
+  }
+  hr {
+    width: 95%;
+  }
+  footer p {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #me p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0px;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.763);
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  body {
+    width: 100%;
+
+    margin-top: 0px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
+    padding: 0px 0px;
+    padding-bottom: 10px;
+  }
+  #main_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding-top: 140px;
+    margin: 10px auto;
+  }
+  #right {
+    position: static;
+    width: 100%;
+    margin: auto;
+  }
+  #left {
+    position: static;
+    width: 100%;
+  }
+  #me h1 {
+    font-size: 2em;
+  }
+  #me {
+    position: absolute;
+    background-color: #1163baf9;
+    text-align: center;
+    padding: 5px;
+    margin: 30px 7px;
+    padding-bottom: 5px;
+    box-shadow: 2px 2px 5px black;
+    width: 98%;
+    box-sizing: border-box;
+  }
+  #infos {
+    margin-top: 0px;
+  }
+  hr {
+    width: 95%;
+  }
 }
